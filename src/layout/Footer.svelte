@@ -1,3 +1,6 @@
+<script>
+import { Link } from "svelte-navigator";
+</script>
 <main>
     <footer class="footer-area">
         <div class="container">
@@ -5,11 +8,11 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <div class="logo">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="/img/Narmada Organics Logo3.png" wi alt="" />
+                            <Link class="navbar-brand" to="/">
+                                <img src="assets/img/Narmada Organics Logo3.png" wi alt="" />
 
-                                <!-- <img src="/img/Narmada Organics Logo3.png" wi alt=""> -->
-                            </a>
+                                <!-- <img src="assets/img/Narmada Organics Logo3.png" wi alt=""> -->
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -17,12 +20,12 @@
                     <div class="single-footer-widget ms-5">
                         <h3>Useful Links</h3>
                         <ul class="useful-links-list">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="api-intermediates.html">API Intermediates</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="manufacturing.html">Manufacturing</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="policies.html">Policies</a></li>
+                            <li><Link to="/aboutus">About Us</Link></li>
+                            <li><Link to="/api-intermediates">API Intermediates</Link></li>
+                            <li><Link to="/services">Services</Link></li>
+                            <li><Link to="/manufacturing">Manufacturing</Link></li>
+                            <li><Link to="/contact">Contact Us</Link></li>
+                            <li><Link to="/policies">Policies</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -30,21 +33,21 @@
                     <div class="single-footer-widget">
                         <h3>Our Services</h3>
                         <ul class="widget-services-list">
-                            <li><a href="services.html">API Manufacturing</a></li>
-                            <li><a href="services.html">Impurity Synthesis</a></li>
+                            <li><Link to="services">API Manufacturing</Link></li>
+                            <li><Link to="services">Impurity Synthesis</Link></li>
                             <li>
-                                <a href="services.html">Custom synthesis and process development</a>
+                                <Link to="services">Custom synthesis and process development</Link>
                             </li>
                             <li>
-                                <a href="services.html">Scale up studies for any given process
-                                </a>
+                                <Link to="services">Scale up studies for any given process
+                                </Link>
                             </li>
-                            <li><a href="services.html">Process Optimization</a></li>
+                            <li><Link to="services">Process Optimization</Link></li>
                             <li>
-                                <a href="services.html">Scale-up production from a few kgs to tons</a>
+                                <Link to="services">Scale-up production from a few kgs to tons</Link>
                             </li>
                             <li>
-                                <a href="services.html">Regulatory documentation, including DMFs (CTD format)</a>
+                                <Link to="services">Regulatory documentation, including DMFs (CTD format)</Link>
                             </li>
                         </ul>
                     </div>
@@ -114,4 +117,5 @@
             </div>
         </div>
     </footer>
+
 </main>

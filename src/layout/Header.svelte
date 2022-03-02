@@ -10,7 +10,7 @@
                 <Link class="navbar-brand" to="index.html">
                     <!-- <img src="assets/img/Narmada Organics Logo3.png" height="70px" alt=""> -->
 
-                    <img src="/img/Narmada Organics Logo3.png" height="70px" alt="" />
+                    <img src="assets/img/Narmada Organics Logo3.png" height="70px" alt="" />
                 </Link>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <Link class="navbar-brand" to="/">
-                        <img src="/img/Narmada Organics Logo3.png" height="120px" alt="" />
+                        <img src="assets/img/Narmada Organics Logo3.png" height="120px" alt="" />
                         <!-- <img src="assets/img/Narmada Organics Logo3.png" height="120px" alt=""> -->
                     </Link>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
