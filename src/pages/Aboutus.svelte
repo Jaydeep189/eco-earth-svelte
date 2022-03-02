@@ -1,6 +1,7 @@
 <script>
     import {Link} from 'svelte-navigator';
-    import {ServiceData, AboutData } from '../data'
+    export let ServiceData;
+    export let AboutData;
 </script>
 
 <main>

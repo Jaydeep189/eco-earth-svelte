@@ -1,6 +1,6 @@
 <script>
 import { Link } from 'svelte-navigator'
-import {HomepageData} from '../data.js'
+export let num;
 </script>
 
 <main>
@@ -9,10 +9,10 @@ import {HomepageData} from '../data.js'
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="main-banner-content">
-                        <span>{HomepageData.mainBanner.subtitle}</span>
-                        <h1>{HomepageData.mainBanner.title}</h1>
+                        <span>{num.mainBanner.subtitle}</span>
+                        <h1>{num.mainBanner.title}</h1>
                         <p>
-                            {HomepageData.mainBanner.details}
+                            {num.mainBanner.details}
                         </p>
                         <Link to="/contact" class="btn btn-primary">Make Appointment</Link>
                     </div>
@@ -54,7 +54,7 @@ import {HomepageData} from '../data.js'
     <section class="boxes-area">
         <div class="container">
             <div class="row">
-            {#each HomepageData.services as service}
+            {#each num.services as service}
             <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class={`single-box ${service.color}`}>
                         <div class="icon">
@@ -88,12 +88,12 @@ import {HomepageData} from '../data.js'
                 <div class="col-lg-7 col-md-12">
                     <div class="about-content">
                         <span>About Us</span>
-                        <h2>{HomepageData.aboutus.title}</h2>
+                        <h2>{num.aboutus.title}</h2>
                         <p>
-                            {HomepageData.aboutus.subtitle}
+                            {num.aboutus.subtitle}
                         </p>
                         <ul class="about-features-list">
-                        {#each HomepageData.aboutus.points as point}
+                        {#each num.aboutus.points as point}
                         <li><i class="flaticon-check-mark"></i>{point}</li>
                         {/each}
                         </ul>
@@ -115,7 +115,7 @@ import {HomepageData} from '../data.js'
     <section class="services-area ptb-120 pt-0">
         <div class="container">
             <div class="row mt-5">
-            {#each HomepageData.services as service}
+            {#each num.services as service}
             <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-services-box">
                         <div class={`icon ${service.color}`}>
@@ -169,11 +169,11 @@ import {HomepageData} from '../data.js'
                 <div class="col-lg-6 col-md-12">
                     <div class="performance-content">
                         <div class="section-title">
-                            <span class="bg-0018ff">{HomepageData.performance.subtitle}</span>
-                            <h2>{HomepageData.performance.title}</h2>
+                            <span class="bg-0018ff">{num.performance.subtitle}</span>
+                            <h2>{num.performance.title}</h2>
                         </div>
                         <div class="performance-progress-list">
-                        {#each HomepageData.performance.plist as list}
+                        {#each num.performance.plist as list}
                         <div class="single-progress">
                                 <div class="progress-bar progress-count" data-percent={list.percentage}></div>
                                 <div class="progress-content">
@@ -210,7 +210,7 @@ import {HomepageData} from '../data.js'
         <div class="container">
             <div class="cta-content">
                 <h3>We'll ensure you always get the best Results</h3>
-                <h2><a href="/#">{HomepageData.contact.phone}</a></h2>
+                <h2><a href="/#">{num.contact.phone}</a></h2>
 
                 <Link to="/contact" class="btn btn-primary">Contact Us</Link>
             </div>

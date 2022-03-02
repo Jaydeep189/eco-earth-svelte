@@ -1,6 +1,6 @@
 <script>
     import {Link} from 'svelte-navigator';
-    import {ServiceData} from '../data'
+    export let data;
 </script>
 
 <main>
@@ -20,7 +20,7 @@
     <section class="services-area ptb-120 pt-0">
         <div class="container">
             <div class="row mt-5">
-                {#each ServiceData.services as service}
+                {#each data.services as service}
             <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-services-box">
                         <div class={`icon ${service.color}`}>

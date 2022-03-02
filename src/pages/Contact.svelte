@@ -1,6 +1,6 @@
 <script>
     import {Link} from 'svelte-navigator';
-    import {ContactData} from '../data'
+    export let data;
 </script>
 
 <main>
@@ -69,13 +69,13 @@
                 </div>
                 <div class="contact-info-content">
                     <h3>Call us for imidiate support</h3>
-                    <h2><a href="tel:+91 94091 33000">{ContactData.phone}</a></h2>
+                    <h2><a href="tel:+91 94091 33000">{data.phone}</a></h2>
                     <ul class="social">
-                        <li><a href={ContactData.social.twitter} target="_blank"><i class="fab fa-tw0itter"></i></a></li>
-                        <li><a href={ContactData.social.youtube} target="_blank"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href={ContactData.social.facebook} target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href={ContactData.social.linkedin} target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href={ContactData.social.instagram} target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href={data.social.twitter} target="_blank"><i class="fab fa-tw0itter"></i></a></li>
+                        <li><a href={data.social.youtube} target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href={data.social.facebook} target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href={data.social.linkedin} target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href={data.social.instagram} target="_blank"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -84,6 +84,6 @@
 
 
     <div id="map">
-        <iframe title="" src={ContactData.mapLink}> </iframe>
+        <iframe title="" src={data.mapLink}> </iframe>
     </div>
 </main>

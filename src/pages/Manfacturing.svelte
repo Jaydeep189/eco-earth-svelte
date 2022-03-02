@@ -1,6 +1,6 @@
 <script>
     import {Link} from 'svelte-navigator';
-    import {Mdata} from '../data'
+    export let data;
 </script>
 
 <main>
@@ -15,7 +15,7 @@
             </div>
         </div>
     </div>
-    {#each Mdata as data}
+    {#each data as data}
     <section class="research-details-area ptb-120">
         <div class="container">
             <div class="section-title">

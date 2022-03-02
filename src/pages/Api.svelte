@@ -1,6 +1,6 @@
 <script>
     import {Link} from 'svelte-navigator'
-    import {ApiData} from '../data'
+    export let data;
 </script>
 
 <main>
@@ -20,7 +20,7 @@
     <section class="services-area ptb-120 pt-0">
         <div class="container">
             <div class="row mt-5">
-                {#each ApiData as api }
+                {#each data as api }
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
                     <div class="single-services-box h-100">
                         <div class={`icon ${api.color}`}>
