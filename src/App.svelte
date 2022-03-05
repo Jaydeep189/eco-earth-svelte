@@ -28,6 +28,7 @@
 			data1 = photos.slice(0, 5);
 			data2 = photos.slice(6, 8);
 		}
+
 	});
 </script>
 

@@ -60,6 +60,7 @@ export let num;
                         <div class="icon">
                             <i class="flaticon-laboratory"></i>
                         </div>
+                        {process.env.TEST}
                         <h3>{service.title}</h3>
                         <p>
                             {service.data}
