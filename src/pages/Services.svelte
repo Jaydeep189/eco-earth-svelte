@@ -1,13 +1,15 @@
 <script>
     import {Link} from 'svelte-navigator';
     export let data;
+    import { env } from '$lib/env'
+    const secret = env.YOUR_SECRET
 </script>
 
 <main>
     <div class="page-title-area">
         <div class="container">
             <div class="page-title-content">
-                <h2>Services</h2>
+                <h2>{secret}</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>Services</li>

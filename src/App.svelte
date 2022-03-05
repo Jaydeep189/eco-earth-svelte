@@ -15,6 +15,7 @@
 	let photos = [];
 	let data1= [];
 	let data2 = [];
+
 	onMount(async () => {
 		if (localStorage.getItem("data")){
 			var temp = JSON.parse(localStorage.getItem('data'));
