@@ -1,6 +1,7 @@
 <script>
 import { Link } from 'svelte-navigator'
 export let num;
+const env = process.env.TEST
 </script>
 
 <main>
@@ -10,7 +11,7 @@ export let num;
                 <div class="col-lg-6 col-md-12">
                     <div class="main-banner-content">
                         <span>{num.mainBanner.subtitle}</span>
-                        <h1>{num.mainBanner.title}</h1>
+                        <h1>{num.mainBanner.title}</h1> <h1>{env}</h1>
                         <p>
                             {num.mainBanner.details}
                         </p>
@@ -60,7 +61,6 @@ export let num;
                         <div class="icon">
                             <i class="flaticon-laboratory"></i>
                         </div>
-                        {process.env.TEST}
                         <h3>{service.title}</h3>
                         <p>
                             {service.data}
