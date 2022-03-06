@@ -1,8 +1,7 @@
 <script>
     import {Link} from 'svelte-navigator';
     export let data;
-    import { env } from '$lib/env'
-    const secret = env.YOUR_SECRET
+    const secret = process.env.NT
 </script>
 
 <main>

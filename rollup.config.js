@@ -5,7 +5,7 @@ import replace from '@rollup/plugin-replace';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
-
+import injectProcessEnv from 'rollup-plugin-inject-process-env';
 const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
@@ -44,15 +44,10 @@ export default {
 				dev: !production
 			}
 		}),
-		replace({
-			FOO: 'bar',
-			process: JSON.stringify({
-			  env: {
-				isProd: production,
-				TEST : "Adseas"
-			  }
-			}),
-		  }),
+		injectProcessEnv({ 
+            NT : "adasdasdas",
+			HOME : process.env.HOME,
+        }),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
